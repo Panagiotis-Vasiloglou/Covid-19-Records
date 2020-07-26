@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Covid Records</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body>
+        <div class="container text-center mt-5 p-5">
+            <h1 class="mb-4">See Covid Records</h1>
+            <p>*USA Not Valid*</p>
+            <h2 id="header"></h2>
+            <form id="form">
+                <div class="input-group mb-3">
+                    <label for="input"></label>
+                    <input
+                        id="input"
+                        type="text"
+                        class="form-control text-center"
+                        placeholder="Search Country..."
+                        aria-label="Recipient's username"
+                        aria-describedby="button-addon2"
+                    />
+                </div>
+            </form>
+            <button id="global" class="btn btn-light">See Global</button>
+            <button id="all-countries" class="btn btn-light">
+                See All Countries
+            </button>
+            <div id="table-div" class="container mt-5">
+                <table id="table" class="table">
+                    <thead>
+                        <tr id="table-header">
+                            <th scope="col">Country</th>
+                            <th scope="col">Total Deaths</th>
+                            <th scope="col">Confirmed</th>
+                            <th scope="col">Active</th>
+                            <th scope="col">Total Recovered</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+        <script src="/app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.479);
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+}
+
+input {
+    font-size: 20px !important;
+    text-transform: capitalize;
+}
+
+.table {
+    color: white;
+}
+
+#table-div {
+    color: white;
+    visibility: hidden;
+}
+
+tr:hover {
+    color: burlywood;
+}
+
+#table-header {
+    color: white;
+}
+
+#table-header:hover {
+    cursor: auto;
+    color: white;
+}
